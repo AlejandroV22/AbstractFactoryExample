@@ -188,19 +188,19 @@ namespace AbstractFactoryExample
         static void Main(string[] args)
         {
             // Cliente usando muebles modernos
-            Console.WriteLine("🔹 Creando muebles modernos:");
+            Console.WriteLine("Creando muebles modernos:");
             MueblesFactory fabricaModerna = new MueblesModernosFactory();
             Cliente cliente1 = new Cliente(fabricaModerna);
             cliente1.UsarMuebles();
 
             // Cliente usando muebles clásicos
-            Console.WriteLine("\n🔹 Creando muebles clásicos:");
+            Console.WriteLine("\nCreando muebles clásicos:");
             MueblesFactory fabricaClasica = new MueblesClasicosFactory();
             Cliente cliente2 = new Cliente(fabricaClasica);
             cliente2.UsarMuebles();
 
             // Cliente usando muebles Art Decó
-            Console.WriteLine("\n🔹 Creando muebles Art Decó:");
+            Console.WriteLine("\nCreando muebles Art Decó:");
             MueblesFactory fabricaArtDeco = new MueblesArtDecoFactory();
             Cliente cliente3 = new Cliente(fabricaArtDeco);
             cliente3.UsarMuebles();
